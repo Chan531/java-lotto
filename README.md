@@ -9,6 +9,27 @@
 > 원본 출처 : [https://github.com/woowacourse-precourse/java-lotto](https://github.com/woowacourse-precourse/java-lotto)
 >
 
+## 리드미
+1. 구입 금액 입력받기 (MoneyInput, view)
+1-1. 입력받은 금액 예외 사항 체크 후 오류가 난다면 에러 출력하고 1로 돌아가기 (Money, model / ErrorOutput, view)
+
+2. 구입한 금액에 해당하는 개수만큼 로또 생성 후 lotto에 저장 (LottoCreation, model)
+2-1. 생성한 로또가 잘못됐다면 다시 생성 (Lotto, model)
+
+3. 구입한 로또 개수와 내역 출력 (LottoOutput, view)
+
+4. 당첨번호 입력 받기 (WinningNumberInput, view)
+4-1. 입력받은 로또가 잘못됐다면 에러 출력 후 4로 돌아가기 (Lotto, model / ErrorOutput, view)
+
+5. 보너스 번호 입력받기 (BonusNumberInput, view)
+5-1. 입력받은 보너스 번호가 잘못됐다면 에러 출력 후 5로 돌아가기 (Lotto, model / ErrorOutput, view)
+
+6. 로또 추첨 후 당첨 결과를 winningResult에 저장 (LotteryDrawing, model / Winning, model)
+
+7. 수익률 계산 (EarningsRateCalculator, model / Winning, model)
+
+8. 최종 결과 출력 (ResultOutput, view / Winning, model)
+
 ## 🚀 기능 요구 사항
 
 로또 게임 기능을 구현해야 한다. 로또 게임은 아래와 같은 규칙으로 진행된다.
